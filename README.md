@@ -4,6 +4,8 @@
 ```shell
 npx hardhat test
 ```
+Note: Github action will run the test with the command below for every push. See .github/workflows/github-actions.yml for the config.
+
 ## Try other commands
 ```shell
 $ npx hardhat
