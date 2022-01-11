@@ -1,7 +1,7 @@
-name: Run Test
+name: Run SmartSurvey Test
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  SmartSurvey-Test:
     runs-on: ubuntu-latest
     env:
       YOUR_ALCHEMY_API_URL: test
