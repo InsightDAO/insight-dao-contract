@@ -1,0 +1,15 @@
+name: Run SmartSurvey Test
+on: [push]
+jobs:
+  SmartSurvey-Test:
+    runs-on: ubuntu-latest
+    env:
+      YOUR_ALCHEMY_API_URL: test
+      YOUR_PRIVATE_KEY: "0x1234567891234567891234567891234567891234567891234567891234567890"
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - run: npm install
+    - run: npx hardhat test
